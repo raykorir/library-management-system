@@ -7,7 +7,7 @@ const token = localStorage.getItem("token");
 const headers = {
   Authorization: `Bearer ${token}`,
 };
-
+console.log(headers)
 // check for token active or not
 export const checkToken = () => {
   let decodedToken = token && jwtDecode(token);

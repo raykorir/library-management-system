@@ -41,7 +41,7 @@ const App = () => {
 const PrivateRoute = ({ tokenIsValid, children }) => {
   return tokenIsValid ? children : <Navigate to="/login" />;
 };
-
+console.log(PrivateRoute)
 const AppRoutes = () => {
   return (
     <>

@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "engines": {"node": "==16"},
+  "engines": {"node": "==18"},
   "author": {"name": "Ray Korir"},
   "dependencies": {
     "@emotion/react": "^11.11.4",
