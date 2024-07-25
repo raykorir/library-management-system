@@ -9,9 +9,9 @@ from datetime import datetime, timedelta
 from typing import Annotated
 import modelTables
 from model import UserBase, Librarian, Book, BookRequest, Category, Author, Publisher, BookIssueRequest, BookIssueRecord, BookSearch, Token
-
+from fastapi.staticfiles import StaticFiles
 # app instance
-app = FastAPI(title="Library Management System")
+app = FastAPI("../frontend", StaticFiles(directory="build"), name="static", title="Library Management System")
 
 modelTables.Base.metadata.create_all(bind=engine)
 
